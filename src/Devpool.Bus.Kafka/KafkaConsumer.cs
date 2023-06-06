@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 using Confluent.Kafka;
 using Devpool.Bus.Abstractions;
@@ -14,6 +15,7 @@ public class KafkaConsumer<T> : IConsumer<T> where T : IEvent
 
     public KafkaConsumer(IOptions<KafkaOptions> options, IEventHandler<T> handler, ILogger<KafkaConsumer<T>> logger)
     {
+        var config = new ProducerConfig();
         _consumer = new ConsumerBuilder<string, string>(options.Value.ConsumerConfig).Build();
         _handler = handler;
         _logger = logger;

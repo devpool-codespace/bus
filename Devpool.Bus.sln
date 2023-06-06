@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.Abstractions", "Devpool.Bus.Abstractions\Devpool.Bus.Abstractions.csproj", "{A52F1C33-1415-46E3-A54C-FA57ADE0C67E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DA4974B0-A08C-4A2F-A287-BB8408737F3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.Kafka", "Devpool.Bus.Kafka\Devpool.Bus.Kafka.csproj", "{7F36FBC2-B780-4576-AB66-D07D0D9491D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.Abstractions", "src\Devpool.Bus.Abstractions\Devpool.Bus.Abstractions.csproj", "{579234A3-7853-45DB-862E-7FA78E16FAA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.TestConsole", "Devpool.Bus.TestConsole\Devpool.Bus.TestConsole.csproj", "{769D16B1-58FF-4F99-9735-F3183680933F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.Kafka", "src\Devpool.Bus.Kafka\Devpool.Bus.Kafka.csproj", "{A401E5EC-F540-4E00-98F1-C782087AC222}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,17 +12,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A52F1C33-1415-46E3-A54C-FA57ADE0C67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A52F1C33-1415-46E3-A54C-FA57ADE0C67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A52F1C33-1415-46E3-A54C-FA57ADE0C67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A52F1C33-1415-46E3-A54C-FA57ADE0C67E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F36FBC2-B780-4576-AB66-D07D0D9491D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F36FBC2-B780-4576-AB66-D07D0D9491D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F36FBC2-B780-4576-AB66-D07D0D9491D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F36FBC2-B780-4576-AB66-D07D0D9491D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{769D16B1-58FF-4F99-9735-F3183680933F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{769D16B1-58FF-4F99-9735-F3183680933F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{769D16B1-58FF-4F99-9735-F3183680933F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{769D16B1-58FF-4F99-9735-F3183680933F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579234A3-7853-45DB-862E-7FA78E16FAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579234A3-7853-45DB-862E-7FA78E16FAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579234A3-7853-45DB-862E-7FA78E16FAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579234A3-7853-45DB-862E-7FA78E16FAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A401E5EC-F540-4E00-98F1-C782087AC222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A401E5EC-F540-4E00-98F1-C782087AC222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A401E5EC-F540-4E00-98F1-C782087AC222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A401E5EC-F540-4E00-98F1-C782087AC222}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{579234A3-7853-45DB-862E-7FA78E16FAA3} = {DA4974B0-A08C-4A2F-A287-BB8408737F3B}
+		{A401E5EC-F540-4E00-98F1-C782087AC222} = {DA4974B0-A08C-4A2F-A287-BB8408737F3B}
 	EndGlobalSection
 EndGlobal

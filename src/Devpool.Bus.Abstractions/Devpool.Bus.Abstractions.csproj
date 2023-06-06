@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageVersion>0.0.0-alfa-4</PackageVersion>
+        <PackageProjectUrl>https://github.com/devpool-codespace/bus</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/devpool-codespace/bus</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/devpool-codespace/bus</RepositoryUrl>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageIcon>icon.jpg</PackageIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="icon.jpg" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+ 
+</Project>

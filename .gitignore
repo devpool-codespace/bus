@@ -114,4 +114,4 @@ pack.sh
 
 nuget
 
-Devpool.Bus.TestConsole
+src/Devpool.Bus.TestConsole
