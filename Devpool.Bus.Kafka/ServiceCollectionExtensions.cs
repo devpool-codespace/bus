@@ -14,13 +14,10 @@ public static class ServiceCollectionExtensions
     {
         var bus = new BusBuilder(services);
         busBuilder(bus);
+        
+        services.AddOptions<KafkaOptions>()
+            .Bind(configuration.GetSection("Kafka"));
 
-        var consumerConfig = configuration.GetSection("Kafka:ConsumerConfig");
-        services.AddSingleton(consumerConfig);
-        
-        var producerConfig = configuration.GetSection("Kafka:ProducerConfig");
-        services.AddSingleton(producerConfig);
-        
         services.AddSingleton<IBus, KafkaProducer>();
 
         var assemblies = AppDomain.CurrentDomain.GetAssemblies();

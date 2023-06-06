@@ -2,6 +2,7 @@ using System.Text.Json;
 using Confluent.Kafka;
 using Devpool.Bus.Abstractions;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace Devpool.Bus.Kafka;
 
@@ -11,9 +12,9 @@ public class KafkaProducer: IBus
     private readonly ILogger<KafkaProducer> _logger;
     private readonly IProducer<string, string> _producer;
 
-    public KafkaProducer(ProducerConfig config, ILogger<KafkaProducer> logger)
+    public KafkaProducer(IOptions<KafkaOptions> options, ILogger<KafkaProducer> logger)
     {
-        _config = config;
+        _config = options.Value.ProducerConfig;
         _logger = logger;
         _producer = new ProducerBuilder<string, string>(_config).Build();
     }

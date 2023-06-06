@@ -5,23 +5,20 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PackageId>Devpool.Bus.Kafka</PackageId>
-        <PackageVersion>$([System.DateTime]::Now.ToString("yyyy.MM.ddhhmmss"))</PackageVersion>
-        <Authors>Devpool</Authors>
-        <Company>Devpool</Company>
-
+        <PackageVersion>0.0.0-alfa-1</PackageVersion>
+        <Authors>DevpoolSoftware</Authors>
+        <Company>DevpoolSoftware</Company>
     </PropertyGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Devpool.Bus.Abstractions\Devpool.Bus.Abstractions.csproj" />
-    </ItemGroup>
     
     
     <ItemGroup>
       <PackageReference Include="Confluent.Kafka" Version="2.1.1" />
+      <PackageReference Include="Devpool.Bus.Abstractions" Version="0.0.0-alfa-1" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
       <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
       <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
       <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
       <PackageReference Include="Scrutor" Version="4.2.2" />
     </ItemGroup>
 

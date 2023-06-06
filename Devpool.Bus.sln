@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.Abstractions", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.Kafka", "Devpool.Bus.Kafka\Devpool.Bus.Kafka.csproj", "{7F36FBC2-B780-4576-AB66-D07D0D9491D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.TestConsole", "Devpool.Bus.TestConsole\Devpool.Bus.TestConsole.csproj", "{769D16B1-58FF-4F99-9735-F3183680933F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{7F36FBC2-B780-4576-AB66-D07D0D9491D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F36FBC2-B780-4576-AB66-D07D0D9491D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F36FBC2-B780-4576-AB66-D07D0D9491D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{769D16B1-58FF-4F99-9735-F3183680933F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769D16B1-58FF-4F99-9735-F3183680933F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769D16B1-58FF-4F99-9735-F3183680933F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{769D16B1-58FF-4F99-9735-F3183680933F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

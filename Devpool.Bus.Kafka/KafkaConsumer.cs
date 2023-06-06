@@ -2,6 +2,7 @@ using System.Text.Json;
 using Confluent.Kafka;
 using Devpool.Bus.Abstractions;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace Devpool.Bus.Kafka;
 
@@ -11,9 +12,9 @@ public class KafkaConsumer<T> : IConsumer<T> where T : IEvent
     private readonly IEventHandler<T> _handler;
     private readonly ILogger<KafkaConsumer<T>> _logger;
 
-    public KafkaConsumer(ConsumerConfig config, IEventHandler<T> handler, ILogger<KafkaConsumer<T>> logger)
+    public KafkaConsumer(IOptions<KafkaOptions> options, IEventHandler<T> handler, ILogger<KafkaConsumer<T>> logger)
     {
-        _consumer = new ConsumerBuilder<string, string>(config).Build();
+        _consumer = new ConsumerBuilder<string, string>(options.Value.ConsumerConfig).Build();
         _handler = handler;
         _logger = logger;
     }

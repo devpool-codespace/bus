@@ -4,7 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PackageVersion>$([System.DateTime]::Now.ToString("yyyy.MM.ddhhmmss"))</PackageVersion>
+        <PackageVersion>0.0.0-alfa-1</PackageVersion>
     </PropertyGroup>
 
  
