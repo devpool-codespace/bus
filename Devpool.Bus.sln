@@ -6,6 +6,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.Abstractions", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.Kafka", "src\Devpool.Bus.Kafka\Devpool.Bus.Kafka.csproj", "{A401E5EC-F540-4E00-98F1-C782087AC222}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A8C5DEE9-F887-46D9-A7D8-4F87A4BB693D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.Tests", "tests\Devpool.Bus.Tests\Devpool.Bus.Tests.csproj", "{2EDD686D-C18B-4A72-890E-4064E0F3D465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devpool.Bus.TestConsole", "tests\Devpool.Bus.TestConsole\Devpool.Bus.TestConsole.csproj", "{5DE61D7B-2615-4ACF-8278-013CE4D5BFAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,9 +26,19 @@ Global
 		{A401E5EC-F540-4E00-98F1-C782087AC222}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A401E5EC-F540-4E00-98F1-C782087AC222}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A401E5EC-F540-4E00-98F1-C782087AC222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EDD686D-C18B-4A72-890E-4064E0F3D465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EDD686D-C18B-4A72-890E-4064E0F3D465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EDD686D-C18B-4A72-890E-4064E0F3D465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EDD686D-C18B-4A72-890E-4064E0F3D465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE61D7B-2615-4ACF-8278-013CE4D5BFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE61D7B-2615-4ACF-8278-013CE4D5BFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE61D7B-2615-4ACF-8278-013CE4D5BFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE61D7B-2615-4ACF-8278-013CE4D5BFAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{579234A3-7853-45DB-862E-7FA78E16FAA3} = {DA4974B0-A08C-4A2F-A287-BB8408737F3B}
 		{A401E5EC-F540-4E00-98F1-C782087AC222} = {DA4974B0-A08C-4A2F-A287-BB8408737F3B}
+		{2EDD686D-C18B-4A72-890E-4064E0F3D465} = {A8C5DEE9-F887-46D9-A7D8-4F87A4BB693D}
+		{5DE61D7B-2615-4ACF-8278-013CE4D5BFAA} = {A8C5DEE9-F887-46D9-A7D8-4F87A4BB693D}
 	EndGlobalSection
 EndGlobal
